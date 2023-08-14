@@ -4,7 +4,6 @@ import { useParams, Link } from "react-router-dom";
 import { ReactComponent as ArrowLeft } from "../assets/arrow-left.svg";
 const NotePage = (props) => {
   const params = useParams();
-  console.log("props: ", params);
   let noteId = params.id;
   let note = notes.find((note) => note.id === Number(noteId));
   return (
